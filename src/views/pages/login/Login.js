@@ -13,7 +13,7 @@ const Login = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:7000/login' , {
+    axios.post('https://rapidmove.herokuapp.com/login' , {
         email : email ,
         password : password
     })
@@ -30,7 +30,7 @@ const Login = () => {
   
   return (
     <div className="bg-light min-vh-100 align-items-center">
-      <section  style={{backgroundColor: "rgb(16 46 86)"}}>
+      <section  style={{backgroundColor: "rgb(16 46 86)" , height: "100vh" }}>
     <div className="container py-5 h-100">
       <div className="row d-flex justify-content-center align-items-center h-100">
         <div className="col col-xl-8">

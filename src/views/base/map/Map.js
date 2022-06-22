@@ -22,13 +22,13 @@ const Map = () => {
   const [show, setShow] = useState("1");
 
   useEffect( () => {
-    axios.get('http://localhost:7000/gateway')
+    axios.get('https://rapidmove.herokuapp.com/gateway')
     .then((resp) => setArr(resp.data.occupancy));
   }, []);
 
   // Parking Numbers show
   useEffect( () => {
-    axios.get('http://localhost:7000/gateway')
+    axios.get('https://rapidmove.herokuapp.com')
     .then((resp) => setData(resp.data.display_data));     
   }, []);
 

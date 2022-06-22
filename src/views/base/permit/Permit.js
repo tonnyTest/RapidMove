@@ -47,10 +47,10 @@ const Permit = () => {
         
     }
     
-    const proceed = (e) => {
+    const proceed = (e) => { 
         e.preventDefault();
         // console.log(dataInfo);
-        axios.post('http://localhost:7000/permit' , {
+        axios.post('https://rapidmove.herokuapp.com/permit' , {
             vehicleType : vehicleType, regisNo : regisNo, 
             name : name , contact : contact,  officeNo : officeNo, 
             empType : empType, permit : permit, slotNo : slotNo, totalAmt : totalAmt
